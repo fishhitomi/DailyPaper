@@ -140,7 +140,7 @@ def get_paper_recommendations():
 
 def summarize_papers_with_llm(papers):
     """调用大模型进行总结"""
-    client = OpenAI(api_key=LLM_API_KEY, base_url="https://api.deepseek.com")
+    client = OpenAI(api_key=LLM_API_KEY, base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")
 
     report_content = ""
     for idx, paper in enumerate(papers):
